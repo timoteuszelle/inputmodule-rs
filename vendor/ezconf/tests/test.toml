@@ -1,0 +1,19 @@
+[integer]
+a = 1
+b = 23434248
+c = -324
+
+[string]
+a = "Foo"
+b = "Bar"
+c = """\
+Lorem ipsum
+dolor sit amet"""
+
+[float]
+a = 1.4142135
+b = 3.1415926
+c = 0.6180339
+
+[boolean]
+available = true

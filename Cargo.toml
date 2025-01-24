@@ -38,7 +38,7 @@ usbd-hid = "0.6.1"
 fugit = "0.3.7"
 is31fl3741 = { version = "0.4.0", features = ["framework_ledmatrix"] }
 # B1 Display
-st7306 = { git = "https://github.com/FrameworkComputer/st7306-rs", branch = "update-deps" }
+st7306 = { git = "https://github.com/FrameworkComputer/st7306-rs", rev = "c505e64cfc10298b382cb78ddf436db4904d18d0" }
 embedded-graphics = "0.8"
 tinybmp = "0.5.0"
 # C1 Minimal

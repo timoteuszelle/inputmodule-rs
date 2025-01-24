@@ -215,7 +215,7 @@ dependencies = [
  "cortex-m-rt",
  "defmt",
  "defmt-rtt",
- "embedded-graphics",
+ "embedded-graphics 0.8.0",
  "embedded-hal",
  "fl16-inputmodules",
  "fugit",
@@ -683,15 +683,38 @@ dependencies = [
 
 [[package]]
 name = "embedded-graphics"
+version = "0.7.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "750082c65094fbcc4baf9ba31583ce9a8bb7f52cadfb96f6164b1bc7f922f32b"
+dependencies = [
+ "az",
+ "byteorder",
+ "embedded-graphics-core 0.3.3",
+ "float-cmp 0.8.0",
+ "micromath 1.1.1",
+]
+
+[[package]]
+name = "embedded-graphics"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cd2a8e0250a7e1212828166b01eed0219e488ebb2599f44624a29c9bd249f397"
 dependencies = [
  "az",
  "byteorder",
- "embedded-graphics-core",
- "float-cmp",
- "micromath",
+ "embedded-graphics-core 0.4.0",
+ "float-cmp 0.9.0",
+ "micromath 2.0.0",
+]
+
+[[package]]
+name = "embedded-graphics-core"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b8b1239db5f3eeb7e33e35bd10bd014e7b2537b17e071f726a09351431337cfa"
+dependencies = [
+ "az",
+ "byteorder",
 ]
 
 [[package]]
@@ -793,7 +816,7 @@ dependencies = [
  "crc",
  "defmt",
  "defmt-rtt",
- "embedded-graphics",
+ "embedded-graphics 0.8.0",
  "embedded-hal",
  "fugit",
  "heapless",
@@ -821,6 +844,15 @@ checksum = "3b9429470923de8e8cbd4d2dc513535400b4b3fef0319fb5c4e1f520a7bef743"
 dependencies = [
  "crc32fast",
  "miniz_oxide 0.7.1",
+]
+
+[[package]]
+name = "float-cmp"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1267f4ac4f343772758f7b1bdcbe767c218bbab93bb432acbf5162bbf85a6c4"
+dependencies = [
+ "num-traits",
 ]
 
 [[package]]
@@ -1037,7 +1069,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dc9abf02bbdd939fe7f46924002c004d8ab811f093392d8e354e8f583a40badf"
 dependencies = [
- "embedded-graphics-core",
+ "embedded-graphics-core 0.4.0",
  "embedded-hal",
 ]
 
@@ -1231,6 +1263,12 @@ name = "memchr"
 version = "2.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
+
+[[package]]
+name = "micromath"
+version = "1.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bc4010833aea396656c2f91ee704d51a6f1329ec2ab56ffd00bfd56f7481ea94"
 
 [[package]]
 name = "micromath"
@@ -2134,9 +2172,9 @@ dependencies = [
 [[package]]
 name = "st7306"
 version = "0.8.2"
-source = "git+https://github.com/FrameworkComputer/st7306-rs?branch=update-deps#8283fcdb91a559fe3a12cb01bc6523d737c28be8"
+source = "git+https://github.com/FrameworkComputer/st7306-rs?rev=c505e64cfc10298b382cb78ddf436db4904d18d0#c505e64cfc10298b382cb78ddf436db4904d18d0"
 dependencies = [
- "embedded-graphics",
+ "embedded-graphics 0.7.1",
  "embedded-hal",
  "nb 1.1.0",
 ]
@@ -2248,7 +2286,7 @@ version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "197cc000e382175ff15abd9c54c694ef80ef20cb07e7f956c71e3ea97fc8dc60"
 dependencies = [
- "embedded-graphics",
+ "embedded-graphics 0.8.0",
 ]
 
 [[package]]

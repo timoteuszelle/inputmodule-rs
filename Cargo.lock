@@ -2172,7 +2172,6 @@ dependencies = [
 [[package]]
 name = "st7306"
 version = "0.8.2"
-source = "git+https://github.com/FrameworkComputer/st7306-rs?rev=c505e64cfc10298b382cb78ddf436db4904d18d0#c505e64cfc10298b382cb78ddf436db4904d18d0"
 dependencies = [
  "embedded-graphics 0.7.1",
  "embedded-hal",
